@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatGridListModule } from '@angular/material/grid-list';
 import { ApiService } from './services/api.service';
 
 import { UpperCaseCustomPipe } from './pipes/upper-case-custom.pipe';
@@ -45,7 +45,8 @@ import { AuthorComponent } from './author/author.component';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
   ],
   providers: [ApiService],
   bootstrap: [AppComponent]

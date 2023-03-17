@@ -2,3 +2,11 @@
     max-width: 400px;
   }
   
+  .example-header-image {
+    background-image: url('https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/117773134_3316320381747136_2448237157339634554_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=174925&_nc_ohc=NOB2ky-zupQAX8HcFfX&_nc_ht=scontent-hou1-1.xx&oh=00_AfAxOlfo4vJpiGaVje80KtPHpUPTdaun8z13j0KMm8p57w&oe=643C07FB');
+    background-size: cover;
+  }
+
+  mat-card-actions{
+    justify-content: center;
+  }
