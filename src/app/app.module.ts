@@ -13,6 +13,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 
 import { ApiService } from './services/api.service';
+import { QuoteService } from './services/quote.service';
 
 import { UpperCaseCustomPipe } from './pipes/upper-case-custom.pipe';
 import { ToLowerCaseCustomPipe } from './pipes/lowerCaseCustom/lower-case-custom.pipe';
@@ -23,6 +24,7 @@ import { PokeCardComponent } from './components/poke-card/poke-card.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BackToMainComponent } from './components/back-to-main/back-to-main.component';
 import { AuthorComponent } from './author/author.component';
+import { GenerateQuoteComponent } from './components/generate-quote/generate-quote.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { AuthorComponent } from './author/author.component';
     ToLowerCaseCustomPipe,
     NotFoundComponent,
     BackToMainComponent,
-    AuthorComponent
+    AuthorComponent,
+    GenerateQuoteComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,10 @@ import { AuthorComponent } from './author/author.component';
     MatInputModule,
     MatIconModule
   ],
-  providers: [ApiService],
+  providers: [
+    ApiService, 
+    QuoteService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
