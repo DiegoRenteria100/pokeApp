@@ -13,6 +13,7 @@ export class PokemonDetailsComponent {
         name: '',
         weight: 0,
         sprite: [],
+        species: [],
     };
     name = '';
 

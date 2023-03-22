@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
-
+import { MatGridListModule } from '@angular/material/grid-list';
 import { ApiService } from './services/api.service';
 import { QuoteService } from './services/quote.service';
 
@@ -48,7 +48,8 @@ import { GenerateQuoteComponent } from './components/generate-quote/generate-quo
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatGridListModule,
   ],
   providers: [
     ApiService, 

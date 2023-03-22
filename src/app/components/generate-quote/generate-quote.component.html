@@ -1,6 +1,8 @@
-<div>
-    <p [textContent]="quote.content"></p>
-    <h4 [textContent]="quote.author"></h4>
-    <button mat-button (click)="getQuote()">Generate quote</button>
-    <back-to-main redirect="home" text="Back to home"></back-to-main>
+<div class="">
+    <p class="quote" >" {{quote.content}}"</p>
+    <p>-{{quote.author}}</p>
+    <div style="justify-content: center; display: flex; gap: 10px;">
+        <button mat-raised-button (click)="getQuote()" style="">Generate quote</button>
+        <back-to-main redirect="home" text="Back to home"></back-to-main>
+    </div>
 </div>
