@@ -9,7 +9,7 @@ body {
 }
 
 .pokemon {
-    margin: 10px;
+    margin: 5px;
     width: 250px;
 }
 
@@ -18,8 +18,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 16px;
-    margin-top: 60px;
+    /* padding: 16px; */
+    margin-top: 110px;
+    justify-content: space-between;
 }
 
 .search {
@@ -28,13 +29,16 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 100;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+::ng-deep .mat-mdc-form-field-subscript-wrapper{
+    display: none;
+}
 .mx-2 {
     margin-top: 10px;
 }

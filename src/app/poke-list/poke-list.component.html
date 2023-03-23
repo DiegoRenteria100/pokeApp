@@ -1,13 +1,14 @@
-<div >
+<div class="search">
     <!-- <div > -->
-        <form  class="search">
-            <mat-form-field appearance="fill" class="mx-2" yPosition="above">
+        <form >
+            <mat-form-field style="margin: 5px;">
                 <mat-label >Find Pokemons</mat-label>
                 <input #findPokemon type="text" matInput placeholder="Pikachu"
                     (keyup)="filterPokemons(findPokemon.value)" class="text-center">
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
         </form>
+        <button mat-stroked-button style="margin: 5px;color: aliceblue; border-color: aliceblue;" (click)="goToAuthor()">See author</button>
     <!-- </div> -->
 </div>
 <div class="list" style="display: flex; align-content: stretch;">

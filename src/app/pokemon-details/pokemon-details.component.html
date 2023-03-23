@@ -9,7 +9,7 @@
     <mat-card-header class="card">
       <mat-card-title-group>
         <mat-card-title>{{ details.name | upperCaseCustom }}</mat-card-title>
-        <mat-card-subtitle>{{details.types[0].type.name}}</mat-card-subtitle>
+        <mat-card-subtitle>Type: {{details.types[0].type.name | lowerCaseCustom }}</mat-card-subtitle>
         <img mat-card-xl-image [src]="details.sprites.front_default" alt="{{details.name}} image">
       </mat-card-title-group>
     </mat-card-header>
@@ -19,6 +19,12 @@
       </p>
       <p>
         Height: {{ details.height }} lb
+      </p>
+      <p>
+        Ability: {{ details.abilities[0].ability.name }}
+      </p>
+      <p>
+        Pokedex id: {{ details.order }}
       </p>
       <back-to-main redirect="home" text="Back to home"></back-to-main>
     </mat-card-content>
