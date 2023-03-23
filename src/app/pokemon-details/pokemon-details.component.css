@@ -1,6 +1,7 @@
 .card {
-  max-width: 400px;
-  margin-bottom: 8px;
+  max-width: 500px;
+  background-color: azure;
+  margin: 100px;
 }
 
 .main{
@@ -8,4 +9,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.poke-details{
+    display: flex;
+    flex-direction: column;
 }

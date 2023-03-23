@@ -1,12 +1,6 @@
-<!-- <mat-card>
-    <img mat-card-image [src]="details.sprites.front_default" alt="{{details.name}} image">
-    <h1>Name: {{ details.name | upperCaseCustom }}</h1>
-    <p>Weight: {{ details.weight }} lb</p>
-    <back-to-main redirect="home" text="Back to home"></back-to-main>
-</mat-card> -->
 <div class="main">
-  <mat-card>
-    <mat-card-header class="card">
+  <mat-card class="card">
+    <mat-card-header>
       <mat-card-title-group>
         <mat-card-title>{{ details.name | upperCaseCustom }}</mat-card-title>
         <mat-card-subtitle>Type: {{details.types[0].type.name | lowerCaseCustom }}</mat-card-subtitle>
@@ -14,18 +8,20 @@
       </mat-card-title-group>
     </mat-card-header>
     <mat-card-content>
-      <p>
-        Weight: {{ details.weight }} lb
-      </p>
-      <p>
-        Height: {{ details.height }} lb
-      </p>
-      <p>
-        Ability: {{ details.abilities[0].ability.name }}
-      </p>
-      <p>
-        Pokedex id: {{ details.order }}
-      </p>
+      <ul class="poke-details">
+        <li>
+          Pokedex id: {{ details.order }}
+        </li>
+        <li>
+          Weight: {{ details.weight }} lb
+        </li>
+        <li>
+          Height: {{ details.height }} lb
+        </li>
+        <li>
+          Ability: {{ details.abilities[0].ability.name }}
+        </li>
+      </ul>
       <back-to-main redirect="home" text="Back to home"></back-to-main>
     </mat-card-content>
   </mat-card>
